@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+  <head>
+    <title>커뮤니티 웹 사이트</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- 부트스트랩 CSS 추가하기 -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/sidebar.css">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row d-flex d-md-block flex-nowrap wrapper">
+        <nav class="col-md-3 float-left col-1 pl-0 pr-0 collapse width show" id="sidebar">
+          <div class="list-group border-0 card text-center text-md-left">
+            <a href="./index.html" class="list-group-item d-inline-block collapsed" data-parent="#sidebar">
+              <img style="width: 20px;" src="./img/home.svg"><span class="d-none d-md-inline ml-1">메인</span>
+            </a>
+
+
+            <a href="#usermenu" class="list-group-item d-inline-block collapsed" data-toggle="collapse"
+             data-parent="#sidebar" aria-expanded="false">
+              <img style="width: 20px;" src="./img/board.svg"><span class="d-none d-md-inline ml-1">게시판 관리</span>
+            </a>
+
+
+            <div class="collapse" id="usermenu">
+              <a href="board.php" class="list-group-item" data-parent="#sidebar">공지사항</a>
+              <a href="" class="list-group-item" data-parent="#sidebar">1:1질의응답</a>
+              <a href="" class="list-group-item" data-parent="#sidebar">서식자료실</a>
+              <a href="" class="list-group-item" data-parent="#sidebar">갤러리</a>
+            </div>
+
+
+            <a href="" class="list-group-item d-inline-block collapsed" data-parent="#sidebar">
+              <img style="width: 20px;" src="./img/user.svg"><span class="d-none d-md-inline ml-1">회원 관리</span>
+            </a>
+
+            <a href="qna.html" class="list-group-item d-inline-block collapsed" data-parent="#sidebar">
+              <img style="width: 20px;" src=""><span class="d-none d-md-inline ml-1"></span>
+            </a>
+            
+            <div class="collapse" id="search">
+              <div class="input-group p-2" style="background-color: #1c1c1c;">
+                <input type="text" class="form-control" placeholder="내용을 입력하세요.">
+              </div>
+            </div>
+          </div>
+        </nav>
+        <main id="main" class="col-md-9 float-left col pl-md-5 pt-3 main">
+          <div class="page-header mt-3">
+              <h2>관리자 메인</h2>
+          </div>
+        
+          <hr>
+  
+          <div class="width collapse show mt-3" aria-expanded="true">
+              <p>본 관리자 페이지는 선문대학교 평생교육원 페이지의 회원 관리, 게시판 관리, 수강신청 확인을 제공합니다.</p>
+          </div>
+          <div id="carousel" class="carousel slide" style="max-width: 1080px;" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carousel" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel" data-slide-to="1"></li>
+              <li data-target="#carousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="./img/캡처.JPG" alt="First slide">
+              </div>
+              
+            
+            </div>
+            <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">이전 사진</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">다음 사진</span>
+            </a>
+          </div>
+
+          <br>
+          <br>
+          <br>
+          <br>
+          
+
+        
+         
+          <footer class="text-center" style="max-width: 1080px;">
+            <p>Copyrightⓒ2017 SUNMOON University., All rights reserved.</p>
+          </footer>
+        </main>
+      </div>
+    </div>
+    <!-- 제이쿼리 자바스크립트 추가하기 -->
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <!-- Popper 자바스크립트 추가하기 -->
+    <script src="./js/popper.min.js"></script>
+    <!-- 부트스트랩 자바스크립트 추가하기 -->
+    <script src="./js/bootstrap.min.js"></script>
+  </body>
+</html>

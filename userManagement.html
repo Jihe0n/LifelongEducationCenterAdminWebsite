@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+  <head>
+    <title>회원관리</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- 부트스트랩 CSS 추가하기 -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/sidebar.css">
+  </head>
+  <style>
+        table{
+                border-top: 1px solid #444444;
+                border-collapse: collapse;
+        }
+        tr{
+                border-bottom: 1px solid #444444;
+                padding: 10px;
+        }
+        td{
+                border-bottom: 1px solid #efefef;
+                padding: 10px;
+        }
+        table .even{
+                background: #efefef;
+        }
+        .text{
+                text-align:center;
+                padding-top:20px;
+                color:#000000
+        }
+        .text:hover{
+                text-decoration: underline;
+        }
+        a:link {color : #57A0EE; text-decoration:none;}
+        a:hover { text-decoration : underline;}
+</style>
+
+  <body>
+    <div class="container-fluid">
+      <div class="row d-flex d-md-block flex-nowrap wrapper">
+        <nav class="col-md-3 float-left col-1 pl-0 pr-0 collapse width show" id="sidebar">
+          <div class="list-group border-0 card text-center text-md-left">
+            <a href="./index.html" class="list-group-item d-inline-block collapsed" data-parent="#sidebar">
+              <img style="width: 20px;" src="./img/home.svg"><span class="d-none d-md-inline ml-1">메인</span>
+            </a>
+            <a href="#usermenu" class="list-group-item d-inline-block collapsed" data-toggle="collapse"
+            data-parent="#sidebar" aria-expanded="false">
+             <img style="width: 20px;" src="./img/board.svg"><span class="d-none d-md-inline ml-1">게시판 관리</span>
+           </a>
+
+
+           <div class="collapse" id="usermenu">
+             <a href="board.php" class="list-group-item" data-parent="#sidebar">공지사항</a>
+             <a href="" class="list-group-item" data-parent="#sidebar">1:1질의응답</a>
+             <a href="" class="list-group-item" data-parent="#sidebar">서식자료실</a>
+             <a href="" class="list-group-item" data-parent="#sidebar">갤러리</a>
+           </div>
+
+
+           <a href="" class="list-group-item d-inline-block collapsed" data-parent="#sidebar">
+             <img style="width: 20px;" src="./img/user.svg"><span class="d-none d-md-inline ml-1">회원 관리</span>
+           </a>
+            <a href="qna.html" class="list-group-item d-inline-block collapsed" data-parent="#sidebar">
+              <img style="width: 20px;" src=""><span class="d-none d-md-inline ml-1"></span>
+            </a>
+            
+            <div class="collapse" id="search">
+              <div class="input-group p-2" style="background-color: #1c1c1c;">
+                <input type="text" class="form-control" placeholder="내용을 입력하세요.">
+              </div>
+            </div>
+          </div>
+        </nav>
+        <main id="main" class="col-md-9 float-left col pl-md-5 pt-3 main">
+            <div class="page-header mt-3">
+                <h2>회원관리</h2>
+            </div>
+            
+            <hr>
+            <table class="table table-striped" style="max-width: 1080px;">
+              <thead>
+                <tr>
+                  <th scope="col" class="mobile" style="width:120px; text-align:center;">아이디</th>
+                  <th scope="col" class="mobile" style="width:120px; text-align:center;">이름</th>
+                
+                  <th scope="col" class="mobile" style="width:120px; text-align:center;">전화번호</th>
+                  <th scope="col" class="mobile" style="width:120px; text-align:center;">생년월일</th>
+                  <th scope="col" class="mobile" style="width:120px; text-align:center;">과정구분</th>
+                  <th scope="col" class="mobile" style="width:120px; text-align:center;">성별</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row" class="mobile" style="text-align:center;">woowwo221</th>
+                 
+                  <td class="mobile" style="text-align:center;">전우준</td>
+                  <td class="mobile" style="text-align:center;">01036569988</td>
+                  <td class="mobile" style="text-align:center;">990112</td>
+                  <td class="mobile" style="text-align:center;">일반 교육과정</td>
+                  <td class="mobile" style="text-align:center;">남</td>
+                </tr>
+                  <tr>
+                    <th scope="row" class="mobile" style="text-align:center;">taeyoon00</th>
+                  
+                    <td class="mobile" style="text-align:center;">지태윤</td>
+                    <td class="mobile" style="text-align:center;">01023268989</td>
+                    <td class="mobile" style="text-align:center;">950502</td>
+                    <td class="mobile" style="text-align:center;">학점은행제</td>
+                    <td class="mobile" style="text-align:center;">남</td>
+                  </tr>
+                <tr>
+                  <th scope="row" class="mobile" style="text-align:center;">saasaas22</th>
+                  <td class="mobile" style="text-align:center;">이상아</td>
+                  <td class="mobile" style="text-align:center;">01055457896</td>
+                  <td class="mobile" style="text-align:center;">010601</td>
+             
+                  <td class="mobile" style="text-align:center;">학점은행제</td>
+                  <td class="mobile" style="text-align:center;">여</td>
+                </tr>
+                <tr>
+                  <th class="mobile" scope="row" style="text-align:center;">yoonsoso</th>
+                  <td class="mobile" style="text-align:center;">윤소형</td>
+                  <td class="mobile" style="text-align:center;">01023326768</td>
+                  <td class="mobile" style="text-align:center;">990204</td>
+              
+                  <td class="mobile" style="text-align:center;">일반교육과정</td>
+                  <td class="mobile" style="text-align:center;">여</td>
+                </tr>
+                <tr>
+                  <th class="mobile" scope="row" style="text-align:center;">fealsdg12</th>
+                  <td class="mobile" style="text-align:center;">송재필</td>
+                  <td class="mobile" style="text-align:center;">01045691234</td>
+                  <td class="mobile" style="text-align:center;">020911</td>
+             
+                  <td class="mobile" style="text-align:center;">학점은행제</td>
+                  <td class="mobile" style="text-align:center;">남</td>
+                </tr>
+              </tbody>
+            </table>
+            <ul class="pagination">
+                <li class="page-item disabled">
+                  <span class="page-link">&laquo;</span>
+                </li>
+                
+                <li class="page-item active"><span class="page-link mobile" style="background-color: darkcyan;">1</span></li>
+                <li class="page-item"><a class="page-link mobile" href="#" style="color: darkcyan;">2</a></li>
+                <li class="page-item"><a class="page-link mobile" href="#" style="color: darkcyan;">3</a></li>
+                <li class="page-item"><a class="page-link mobile" href="#" style="color: darkcyan;">4</a></li>
+                <li class="page-item"><a class="page-link mobile" href="#" style="color: darkcyan;">5</a></li>
+                <li class="page-item"><a class="page-link mobile" href="#" style="color: darkcyan;">6</a></li>
+                <li class="page-item"><a class="page-link mobile" href="#" style="color: darkcyan;">7</a></li>
+                <li class="page-item"><a class="page-link mobile" href="#" style="color: darkcyan;">8</a></li>
+                <li class="page-item"><a class="page-link mobile" href="#" style="color: darkcyan;">9</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#">&raquo;</a>
+                </li>
+              </ul>
+    
+
+
+
+            <footer class="text-center" style="max-width: 1080px;">
+              <p>Copyrightⓒ2017 SUNMOON University., All rights reserved.</p>
+            </footer>
+          </main>
+        </div>
+      </div>
+      <!-- 제이쿼리 자바스크립트 추가하기 -->
+      <script src="./js/jquery-3.2.1.min.js"></script>
+      <!-- Popper 자바스크립트 추가하기 -->
+      <script src="./js/popper.min.js"></script>
+      <!-- 부트스트랩 자바스크립트 추가하기 -->
+      <script src="./js/bootstrap.min.js"></script>
+    </body>
+  </html>
+  
